@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+    <title>Temp Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Temperature Converter</h1>
+      <label for="temperature" id="lbltemp">Enter Temperature:</label><br/>
+      <input type="text" id="temperature" placeholder="Temperature" /><br>
+      <label for="from" id="from">From:</label><br />
+      <select name="from" id="fromUnit">
+        <option value="Fahrenheit">Fahrenheit</option>
+        <option value="Celsius">Celsius</option>
+        <option value="Kelvin">Kelvin</option>
+     </select><br />
+      <label for="to" id="to">To:</label><br />
+      <select name="to" id="toUnit">
+        <option value="Fahrenheit">Fahrenheit</option>
+        <option value="Celsius">Celsius</option>
+        <option value="Kelvin">Kelvin</option>
+      </select><br>
+      <p id="convertedTemperature"></p>
+      <button onclick="convertedTemperature()" id="convert">Convert</button>
+      <button onclick="refreshPage()" id="refresh">Refresh</button>
+    </div>
+  </body>
+</html>
